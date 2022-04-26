@@ -1,6 +1,6 @@
 # analyst_cycle
 
-Мини кейс аналитика данных
+Мини кейс аналитика данных dlya vsex
 
 
 ## Getting started
