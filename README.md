@@ -1,5 +1,4 @@
 # analyst_cycle
-razborka v bronxce
 
 
 ## Getting started
