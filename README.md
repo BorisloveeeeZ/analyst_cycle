@@ -1,6 +1,5 @@
 # analyst_cycle
-
-Мини кейс аналитика данных dlya vsex
+razborka v bronxce
 
 
 ## Getting started
