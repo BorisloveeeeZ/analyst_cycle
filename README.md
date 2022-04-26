@@ -1,5 +1,6 @@
 # analyst_cycle
 
+Мини кейс аналитика данных
 
 
 ## Getting started
