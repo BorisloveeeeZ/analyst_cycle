@@ -7,17 +7,17 @@
 
 1. [**Формирование отчета по ключевым метрикам в телеграм**](https://gitlab.com/te4624/analyst_cycle/-/blob/main/telegram_bot.py): 
 
-Аналитика начинается с вопроса ***сколько?***. Сколько пользователей пользуются нашим приложением в день, сколько они ставят лайков, какой CTR, сколько просмотров итд. Мы всегда должны получить быстрый ответ на ключевые вопросы, сформируем отчет и настроим автоматическое расписание в гитлаб.  
+Аналитика начинается с вопроса ***сколько?***. Сколько пользователей пользуются нашим приложением в день, сколько они ставят лайков, какой CTR, сколько просмотров итд. Мы всегда должны получить быстрый ответ на ключевые вопросы, сформируем отчет и настроим автоматическое расписание в гитлаб. 
 
-Стек: Pandas, seaborn, matplotlib, asyncio, telegram, pandahouse, os, CI/CD. 
-***Пример отчета***: ![screen](https://sun1-92.userapi.com/s/v1/if2/j985FZZhVNvKl7FnCPoB10WYhQMCjOFV1MJyCrGZnb-xsK_WdpUEWwZQADW773zc8mwZ65xQSRmpJflz-Jy_rXUa.jpg?size=972x2160&quality=95&type=album'my screen')
+***Стек:*** Pandas, seaborn, matplotlib, asyncio, telegram, pandahouse, os, CI/CD.    
+[***Пример отчета:*** ](https://sun1-92.userapi.com/s/v1/if2/j985FZZhVNvKl7FnCPoB10WYhQMCjOFV1MJyCrGZnb-xsK_WdpUEWwZQADW773zc8mwZ65xQSRmpJflz-Jy_rXUa.jpg?size=972x2160&quality=95&type=album)
 
 ---
 
-1. [**Что делать, если что-то пошло не так?**](https://public.tableau.com/profile/vladislav.shag#!/vizhome/Praktikumproject/Dashboard1?publish=yes):
+2. [**Что делать, если что-то пошло не так?**](https://public.tableau.com/profile/vladislav.shag#!/vizhome/Praktikumproject/Dashboard1?publish=yes):
 
-Говорят, что аналитики седеют со скоростью, эквивалетной зарплате дата-саентиста, когда с их метрикой происходит что-то не так. 
-Но как понять и быстро среагировать на изменения? Для этого мы сделаем систему оповещений, чтобы аллерт приходил к нам, когда что-то происходит не так.
+Каждый переживает, когда с их метрикой происходит что-то не так. 
+Но как понять и быстро среагировать на изменения? Для этого мы сделаем ***систему оповещений***, чтобы аллерт приходил к нам, когда что-то происходит не так.
 
 Стек: Pandas, sqlalchemy, SQL, Tableau.
 
