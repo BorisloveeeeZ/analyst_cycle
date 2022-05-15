@@ -10,7 +10,7 @@
 Аналитика начинается с вопроса ***сколько?***. Сколько пользователей пользуются нашим приложением в день, сколько они ставят лайков, какой CTR, сколько просмотров итд. Мы всегда должны получить быстрый ответ на ключевые вопросы, сформируем отчет и настроим автоматическое расписание в гитлаб.  
 
 Стек: Pandas, seaborn, matplotlib, asyncio, telegram, pandahouse, os, CI/CD. 
-***Пример отчета**: ![screen](https://sun9-80.userapi.com/s/v1/if2/j985FZZhVNvKl7FnCPoB10WYhQMCjOFV1MJyCrGZnb-xsK_WdpUEWwZQADW773zc8mwZ65xQSRmpJflz-Jy_rXUa.jpg?size=972x2160&quality=95&type=album 'my screen')
+***Пример отчета***: ![screen](https://sun1-92.userapi.com/s/v1/if2/j985FZZhVNvKl7FnCPoB10WYhQMCjOFV1MJyCrGZnb-xsK_WdpUEWwZQADW773zc8mwZ65xQSRmpJflz-Jy_rXUa.jpg?size=972x2160&quality=95&type=album'my screen')
 
 ---
 
