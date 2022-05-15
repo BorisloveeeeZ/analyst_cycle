@@ -13,13 +13,26 @@ sns.set(font_scale=2,
         rc={'figure.figsize': (44,20)})
 
 def get_plot(data):
-    df = data
-    fig, axes = plt.subplots(2, 2)   
-    sns.lineplot(data=df, x='time', y='DAU', ax=axes[0,0])
-    sns.lineplot(data=df, x='time', y='Likes', ax=axes[0,1])
-    sns.lineplot(data=df, x='time', y='Views', ax=axes[1,0])
-    sns.lineplot(data=df, x='time', y='CTR', ax=axes[1,1])
-    plt.suptitle("Ключевые метрики за прошедшие 7 дней")
+
+    plot_dict = {(0,0) : {'y':'users', 'title':'Уникальные пользователи'},
+              (0,1) : {'y':'likes', 'title':'Количество лайков'},
+              (1,0) : {'y':'views', 'title':'Количество просмотров'},
+              (1,1) : {'y':'ctr', 'title':'CTR'}
+    }
+
+    fig, axes = plt.subplots(2, 2) 
+    fig.suptitle('Статистика по ленте за предыдущие 7 дней')  
+    for i in range(2):
+        for j in range(2):
+            sns.lineplot(ax = axes[i,j], data = data, x = 'date', y = plot_dict[(i, j)]['y'])
+            axes[i,j].set_title(plot_dict[(i,j)]['title'])
+            axes[i,j].set(xlabel = None)
+            axes[i,j].set(ylabel = None)
+            for ind, label in enumerate(axes[i,j].get_xticklabels()):
+                if ind % 3 == 0 :
+                    label.set_visible(True)
+                else:
+                    label.set_visible(False)    
 
     plot_object = io.BytesIO()
     plt.savefig(plot_object)
@@ -112,9 +125,9 @@ Posts: {posts} ({to_posts_day_ago:+.2%} к дню назад, {to_posts_week_ago
                             / df[df['date'] == week_ago.date()]['ctr'].iloc[0]
                     )
 
-    
+    plot_object = get_plot(df)
     await bot.sendMessage(chat_id = chat_id, text = report)
-    #await bot.sendPhoto(chat_id = chat_id, photo = get_plot(df))
+    await bot.sendPhoto(chat_id = chat_id, photo = plot_object)
 
 
 try:
