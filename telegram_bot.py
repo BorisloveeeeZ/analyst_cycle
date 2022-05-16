@@ -45,6 +45,7 @@ def get_plot(data):
 
 async def feed_report(chat_id = None):
     chat_id = chat_id or 1728100829
+    # TODO: спрятать токен и коннектор
     bot = telegram.Bot(token = '5201797154:AAH-bDxdih6M5n8qU4YM1c8bv78MU0hqwBA')
     message = ''' Отчет за {date} по основным метрикам:
 DAU: {users} ({to_users_day_ago:+.2%} к дню назад, {to_users_week_ago:+.2%} к прошлой неделе)
