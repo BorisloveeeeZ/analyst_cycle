@@ -27,7 +27,7 @@
 
 С первостепенными задачами разобрались, теперь нужно углубиться в продукт, чтобы исследовать различные гипотезы. Ответим на более сложные продуктовые вопросы
 Так же пример [**E-commerce работы с RFM сегментацией**](https://gitlab.com/te4624/analyst_cycle/-/blob/main/miniproject.ipynb)
-Стек: Pandas, SQL, matplotlib, seaborn.
+Стек: SQL, matplotlib, seaborn, pandas.
 
 ---
 
