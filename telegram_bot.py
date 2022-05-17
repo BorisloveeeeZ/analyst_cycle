@@ -45,8 +45,7 @@ def get_plot(data):
 
 async def feed_report(chat_id = None):
     chat_id = chat_id or 1728100829
-    # TODO: спрятать токен и коннектор
-    bot = telegram.Bot(token = os.environ.get('REPORT_TOKEN'))
+    bot = telegram.Bot(token=os.environ.get('REPORT_TOKEN'))
     message = ''' Отчет за {date} по основным метрикам:
 DAU: {users} ({to_users_day_ago:+.2%} к дню назад, {to_users_week_ago:+.2%} к прошлой неделе)
 Likes: {likes} ({to_likes_day_ago:+.2%} к дню назад, {to_likes_week_ago:+.2%} к прошлой неделе)
@@ -127,8 +126,8 @@ Posts: {posts} ({to_posts_day_ago:+.2%} к дню назад, {to_posts_week_ago
                     )
 
     plot_object = get_plot(df)
-    await bot.sendMessage(chat_id = chat_id, text = report)
-    await bot.sendPhoto(chat_id = chat_id, photo = plot_object)
+    await bot.sendMessage(chat_id=chat_id, text=report)
+    await bot.sendPhoto(chat_id=chat_id, photo=plot_object)
 
 
 try:
@@ -136,5 +135,3 @@ try:
 except Exception as e:
     print(e)
 
-
-            
