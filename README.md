@@ -5,11 +5,11 @@
 
 ---
 
-1. [**Формирование отчета по ключевым метрикам в телеграм**](https://gitlab.com/te4624/analyst_cycle/-/blob/main/telegram_bot.py): 
+1. [**Формирование отчета по ключевым метрикам в телеграм**](https://gitlab.com/BorisloveeeZ/analyst_cycle/-/blob/main/telegram_bot.py): 
 
 Аналитика начинается с вопроса ***сколько?***. Сколько пользователей пользуются нашим приложением в день, сколько они ставят лайков, какой CTR, сколько просмотров итд. Мы всегда должны получить быстрый ответ на ключевые вопросы, сформируем отчет и настроим автоматическое расписание в гитлаб(чтобы он приходил к нам каждое утро без нашего участия). 
 
-***Стек:*** Pandas, seaborn, matplotlib, asyncio, telegram, pandahouse, os, [**CI/CD**](https://gitlab.com/te4624/analyst_cycle/-/blob/main/gitlab-ci.yml)
+***Стек:*** Pandas, seaborn, matplotlib, asyncio, telegram, pandahouse, os, [**CI/CD**](https://gitlab.com/BorisloveeeZ/analyst_cycle/-/blob/main/gitlab-ci.yml)
 [***Пример отчета***](https://sun1-92.userapi.com/s/v1/if2/j985FZZhVNvKl7FnCPoB10WYhQMCjOFV1MJyCrGZnb-xsK_WdpUEWwZQADW773zc8mwZ65xQSRmpJflz-Jy_rXUa.jpg?size=972x2160&quality=95&type=album)
 
 ---
@@ -23,10 +23,10 @@
 
 ---
 
-3. [**Анализируем продуктовые метрики**](https://gitlab.com/te4624/analyst_cycle/-/blob/main/product.ipynb)
+3. [**Анализируем продуктовые метрики**](https://gitlab.com/BorisloveeeZ/analyst_cycle/-/blob/main/product.ipynb)
 
 С первостепенными задачами разобрались, теперь нужно углубиться в продукт, чтобы исследовать различные гипотезы. Ответим на более сложные продуктовые вопросы
-Так же пример [**E-commerce работы с RFM сегментацией**](https://gitlab.com/te4624/analyst_cycle/-/blob/main/rfm_cohort.ipynb)
+Так же пример [**E-commerce работы с RFM сегментацией**](https://gitlab.com/BorisloveeeZ/analyst_cycle/-/blob/main/rfm_cohort.ipynb)
 Стек: SQL, matplotlib, seaborn, pandas.
 
 ---
