@@ -40,3 +40,11 @@
 Стек: Pandas, matplotlib, seaborn, numpy.
 
 ---
+5[**Work with requests**](https://gitlab.com/BorisloveeeZ/analyst_cycle/-/blob/main/python_core_train/requests.py)
+
+Пример работы с Api. Консольная утилита, которая сокращает ссылку в битлинк, если она уже создана, считает клики по ней.
+
+
+Стек: Pandas, matplotlib, seaborn, numpy.
+
+---
