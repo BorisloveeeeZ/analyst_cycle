@@ -24,8 +24,9 @@
 
 3. [**Анализируем продуктовые метрики**](https://github.com/BorisloveeeeZ/analyst_cycle/blob/main/product.ipynb)
 
-С первостепенными задачами разобрались, теперь нужно углубиться в продукт, чтобы исследовать различные гипотезы. Ответим на более сложные продуктовые вопросы
-А так же решим задачу проджекта-Васи [**E-commerce работы с RFM сегментацией**](https://gitlab.com/BorisloveeeZ/analyst_cycle/-/blob/main/rfm_cohort.ipynb)
+С первостепенными задачами разобрались, теперь нужно углубиться в продукт, чтобы исследовать различные гипотезы. Ответим на более сложные продуктовые вопросы  
+
+А так же решим задачу менеджера-Василия [**C RFM сегментацией **](https://github.com/BorisloveeeeZ/analyst_cycle/blob/main/ecom_example/rfm_product.ipynb)
 Стек: SQL, matplotlib, seaborn, pandas.
 
 ---
