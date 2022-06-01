@@ -12,7 +12,7 @@ sns.set(font_scale=2,
         style="darkgrid",
         rc={'figure.figsize': (44,20)})
 
-def get_plot(data):
+def get_plot(data)->pd.DataFrame:
 
     plot_dict = {(0,0) : {'y':'users', 'title':'Уникальные пользователи'},
               (0,1) : {'y':'likes', 'title':'Количество лайков'},
