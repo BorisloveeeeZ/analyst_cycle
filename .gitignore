@@ -1,6 +1,7 @@
 ch.py
 
 .env
+**/__pycache__/
 # Default ignored files
 /shelf/
 /workspace.xml
