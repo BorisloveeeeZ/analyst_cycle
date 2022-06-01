@@ -4,10 +4,11 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from CH import Getch
 import io
+from dotenv import load_dotenv
 import os
 import asyncio
 
-
+load_dotenv()
 sns.set(font_scale=2,
         style="darkgrid",
         rc={'figure.figsize': (44,20)})
@@ -45,7 +46,7 @@ def get_plot(data)->pd.DataFrame:
 
 async def feed_report(chat_id = None):
     chat_id = chat_id or 1728100829
-    bot = telegram.Bot(token=os.environ.get('REPORT_TOKEN'))
+    bot = telegram.Bot(token=os.getenv('REPORT_TOKEN'))
     message = ''' Отчет за {date} по основным метрикам:
 DAU: {users} ({to_users_day_ago:+.2%} к дню назад, {to_users_week_ago:+.2%} к прошлой неделе)
 Likes: {likes} ({to_likes_day_ago:+.2%} к дню назад, {to_likes_week_ago:+.2%} к прошлой неделе)
@@ -68,7 +69,7 @@ Posts: {posts} ({to_posts_day_ago:+.2%} к дню назад, {to_posts_week_ago
        GROUP BY date
        ORDER BY date
     ''').df
-   
+    print(df)  
     df['date'] = pd.to_datetime(df['date']).dt.date
     df = df.astype({'users': int, 'views': int, 'likes' : int, 'posts' : int})
     today = pd.Timestamp('now') - pd.DateOffset(days = 1)
