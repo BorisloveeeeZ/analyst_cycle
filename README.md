@@ -26,7 +26,7 @@
 
 С первостепенными задачами разобрались, теперь нужно углубиться в продукт, чтобы исследовать различные гипотезы. Ответим на более сложные продуктовые вопросы  
 
-А так же решим задачу менеджера-Василия [**C RFM сегментацией **](https://github.com/BorisloveeeeZ/analyst_cycle/blob/main/ecom_example/rfm_product.ipynb)
+А так же решим задачу менеджера-Василия [C RFM сегментацией ](https://github.com/BorisloveeeeZ/analyst_cycle/blob/main/ecom_example/rfm_product.ipynb)
 Стек: SQL, matplotlib, seaborn, pandas.
 
 ---
