@@ -2,7 +2,7 @@ import pandas as pd
 import telegram
 import matplotlib.pyplot as plt
 import seaborn as sns
-from CH import Getch
+from ch import Getch
 import io
 from dotenv import load_dotenv
 import os

@@ -4,10 +4,11 @@ from io import StringIO
 import requests
 from airflow.decorators import dag, task
 from airflow.operators.python import get_current_context
+from ch import Getch
 
-def ch_get_df(query, host = 'https://clickhouse.lab.karpov.courses', user = 'student', password = 'dpo_python_2020'):
+def ch_get_df(query):
     '''connection to db'''
-    r = requests.post(host, data = query.encode('utf-8'), auth=(user, password), verify = False)
+    r = requests.post(data = Getch(query.encode('utf-8')))
     result = pd.read_csv(StringIO(r.text), sep='\t')
     return result
 
@@ -47,5 +48,6 @@ def default_dag(schedule_interval = schedule_interval, default_args = default_ar
         return df_cube    
 
     df_cube = extract()
+    print(df_cube)
 
 dag_example = default_dag    
