@@ -32,7 +32,7 @@ def shorten_link(user_link, headers):
     return response_post.json()["link"]
 
 
-def main():
+def main_run():
     token = os.environ['Bitly_Token']
     headers = {'Authorization': f'Bearer {token}'}
     user_link = input('Введите ссылку для сокращения: ')
@@ -51,4 +51,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    main_run()
