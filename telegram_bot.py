@@ -2,7 +2,7 @@ import pandas as pd
 import telegram
 import matplotlib.pyplot as plt
 import seaborn as sns
-import pandahouse as db
+from CH import Getch
 import io
 import os
 import asyncio
@@ -53,13 +53,9 @@ Views: {views} ({to_views_day_ago:+.2%} к дню назад, {to_views_week_ago
 CTR: {ctr:+.2%} ({to_ctr_day_ago:+.2%} к дню назад, {to_ctr_week_ago:+.2%} к прошлой неделе)
 Posts: {posts} ({to_posts_day_ago:+.2%} к дню назад, {to_posts_week_ago:+.2%} к прошлой неделе)
 '''
-    connection = {'host': 'https://clickhouse.lab.karpov.courses',
-              'password': 'dpo_python_2020',
-              'user': 'student',
-              'database': 'simulator'
-             }
 
-    data = '''
+
+    df = Getch('''
        SELECT
          toDate(time) AS date,
          COUNT(DISTINCT(user_id)) AS users,
@@ -71,9 +67,8 @@ Posts: {posts} ({to_posts_day_ago:+.2%} к дню назад, {to_posts_week_ago
        WHERE toDate(time) between today()- 8 and today() - 1
        GROUP BY date
        ORDER BY date
-    '''
+    ''').df
    
-    df = db.read_clickhouse(data, connection=connection)
     df['date'] = pd.to_datetime(df['date']).dt.date
     df = df.astype({'users': int, 'views': int, 'likes' : int, 'posts' : int})
     today = pd.Timestamp('now') - pd.DateOffset(days = 1)
